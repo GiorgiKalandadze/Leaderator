@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color:#d8d8d8;
+    background-color:#e7e7e7;
     border: 2px solid green;
     padding-top: 20px;
     padding-left: 40px;
@@ -20,7 +20,7 @@
     
     /* grid-row-gap: 20px; */
    
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 
@@ -28,11 +28,15 @@
     width: 590px;
     background-color: white;
     margin-bottom: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 10px;
+    padding: 20px;
 }
 .amount{
     height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .contact{
     height: 220px;
@@ -40,7 +44,7 @@
 .deposit{
     height: 130px;
 }
-.payment{
+.payments{
     height: 230px;
 }
 .loyalty{
@@ -57,8 +61,102 @@
 }
 
 
-@media only screen and (max-width: 1030px) {
-    .grid-container{
-        grid-template-columns: auto;
+
+.column-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account-row{
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 50px;
+}
+
+.currency{
+    padding:3px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Contact and Payment*/
+.contact-items, .payment-items{
+    display: flex;
+    justify-content: space-between;
+}
+.contact, .payment{
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.contact:hover, .payment:hover{
+    background-color: #d8d8d8;
+    border-radius: 20px;
+}
+.contact-image, .payment-image{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+}
+.contact-name, .payment-name{
+    font-size: 13px;
+}
+.fas.fa-ellipsis-h{
+    color:#fc6719;
+}
+.more{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color:rgb(236, 204, 204);
+    outline: none;
+    border: none;
+}
+
+/* Operations */
+.operation-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.operation{
+
+    height: 60px;
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.operation:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.operation-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container.main{
+        flex-direction: column;
+        align-items: center;
     }
 }
