@@ -4,6 +4,61 @@
     padding: 0px;
 }
 
+.container.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#d8d8d8;
+    border: 2px solid green;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.main-items{
+    display: flex;
+    flex-direction: column;
+    
+    /* grid-row-gap: 20px; */
+   
+    border: 2px solid black;
+    
+}
+
+.item{
+    width: 590px;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.amount{
+    height: 260px;
+}
+.contact{
+    height: 220px;
+}
+.deposit{
+    height: 130px;
+}
+.payment{
+    height: 230px;
+}
+.loyalty{
+    height: 130px;
+}
+.exchange{
+    height: 350px;
+}
+.pension{
+    height: 100px;
+}
+.operation{
+    height: 850px;
+}
 
 
-
+@media only screen and (max-width: 1030px) {
+    .grid-container{
+        grid-template-columns: auto;
+    }
+}
