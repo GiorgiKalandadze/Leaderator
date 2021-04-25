@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     background-color:#e7e7e7;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
@@ -84,7 +84,112 @@
     border-radius: 10px;
     outline: none;
 }
+.deposit-items{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.deposit-button{
+    background-color:rgb(236, 204, 204);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.fas.fa-money-check{
+    color: #fc6719;
+    font-size: 20px;
+}
+.deposit-values{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
 
+/* Loyalty */
+.loyalty-items{
+    margin-top: 20px;
+    display: flex;
+}
+.loyalty-item{
+    display: flex;
+    margin-right: 50px;
+}
+.loyalty-img{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+}
+
+/* Exchange */
+.item.exchange{
+    display: flex;
+    flex-direction: column;
+}
+.exchange-name{
+    height: 50px;
+}
+.exchange-titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.exchange-types{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+    padding: 15px;
+    border-top: 1px solid grey;
+}
+.exchange-type{
+    margin-left: 50px;
+}
+.exchange-row{
+    width: 100%;
+    padding: 15px;
+    border-top: 1px solid grey;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.exchange-currency{
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    font-size: 15px;
+    background-color: lightgrey;
+}
+
+/* Pension */
+.pension-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pension-info{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pension-title{
+    font-size: 15px;
+}
+.pension-activate{
+    font-size: 14px;
+    color:#fc6719;
+}
+.pension-logo{
+    width: 60px;
+}
 /* Contact and Payment*/
 .contact-items, .payment-items{
     display: flex;
@@ -154,7 +259,8 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1290px) {
     .container.main{
         flex-direction: column;
         align-items: center;
