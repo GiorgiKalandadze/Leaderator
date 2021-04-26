@@ -8,27 +8,27 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color:#e7e7e7;
+    background-color:#f4f4f4;
     /* border: 2px solid green; */
     padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .main-items{
     display: flex;
     flex-direction: column;
-    
-    /* grid-row-gap: 20px; */
-   
-    /* border: 2px solid black; */
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
 
 .item{
-    width: 590px;
+    width: 100%;
+    
     background-color: white;
     margin-bottom: 20px;
-    /* border: 2px solid red; */
+    
     border-radius: 10px;
     padding: 20px;
 }
@@ -36,9 +36,8 @@
     height: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.contact{
+/* .contact{
     height: 220px;
 }
 .deposit{
@@ -58,32 +57,71 @@
 }
 .operation{
     height: 850px;
+} */
+
+
+/* Amount */
+.amount-sum{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
-
-
-
-.column-title{
+.amount-value{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.column-titles{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
+}
+.column-title{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.account-name{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+.account-text{
+    width: 110px;
+    font-weight: 500;
+    font-size: 13px;
 }
 .account-row{
     border-top: 1px solid grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.account-row:hover{
+    background-color: lightgrey;
 }
 .card{
     width: 50px;
 }
-
+.currencys{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
 .currency{
-    padding:3px;
+    text-align: center;
+    width: 30px;
+    height: 20px;
     background: none;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 12px;
     outline: none;
 }
+/* Deposit */
 .deposit-items{
     display: flex;
     margin-top: 20px;
@@ -133,6 +171,10 @@
 }
 .exchange-name{
     height: 50px;
+}
+.exchange-number{
+    font-weight: 600;
+    font-size: 14px;
 }
 .exchange-titles{
     display: flex;
@@ -191,9 +233,16 @@
     width: 60px;
 }
 /* Contact and Payment*/
+.contact-title, .payment-title{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
 .contact-items, .payment-items{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contact, .payment{
     width: 100px;
@@ -206,6 +255,7 @@
     transition: background-color 0.5s;
     cursor: pointer;
 }
+
 .contact:hover, .payment:hover{
     background-color: #d8d8d8;
     border-radius: 20px;
@@ -236,13 +286,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 10px;
 }
 .operation{
-
-    height: 60px;
+    height: 70px;
     width: 100%;
-    padding: 10px 30px 10px 30px;
+    padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -258,11 +308,64 @@
     height: 40px;
     border-radius: 20px;
 }
+.operation-detail{
+    margin-left: 10px;
+    margin-right: auto;
+}
+.operation-price{
+    margin-right: 10px;
+}
+.operation-date{
+    font-weight: 500;
+    font-size: 12px;
+}
+.operation-place{
+    font-weight: 500;
+    font-size: 13px;
+}
+.operation-type{
+    font-weight: 500;
+    font-size: 12px;
+}
+.show-more-opers{   
+    display: flex;
+    margin-top: 20px;
+    color:#fc6719;
+}
+.show-more-title{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.fas.fa-ellipsis-v{
+    color:grey;
+}
 
 
-@media only screen and (max-width: 1290px) {
+@media only screen and (max-width: 1090px) {
     .container.main{
         flex-direction: column;
         align-items: center;
+    }
+    .main-items{
+        align-items: center;
+    }
+    .item{
+        width: 590px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .main-items{
+        width: 100%;
+    }
+    .item{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 526px) {
+    .card, .currencys{
+        display: none;
     }
 }

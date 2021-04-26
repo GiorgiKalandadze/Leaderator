@@ -2,18 +2,19 @@
 header{
     /* border: 2px solid red; */
     /* Temporary */
-    
+    background-color:#f4f4f4;
 }
 .container{
     width: 100%;
     /* border: 2px solid blue; */
 }
+
 .header-items{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px 15px 30px;
-    /* border: 2px solid green; */
+    padding: 8px 30px 8px 30px;
+    
 }
 .header-logo, .header-profile{
     /* border: 2px solid black; */
@@ -22,14 +23,38 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 280px;
+}
+.dark{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.dark:hover{
+    background-color: lightgrey;
 }
 .fas.fa-moon{
-    margin-right: 50px;
+    font-size: 13px;
 }
-.far.fa-user-circle{
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+.user-name{
+    font-size: 12px;
+}
+/* .far.fa-user-circle{
     font-size: 30px;
-}
+} */
 .nav{
     background-color: #fc6719;
 }
