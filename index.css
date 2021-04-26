@@ -62,12 +62,16 @@
 
 /* Amount */
 .amount-sum{
+    
+    font-family: "BOG Headline";
+
     font-weight: 500;
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 15px;
 }
 .amount-value{
+    
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 15px;
@@ -79,6 +83,7 @@
     margin-bottom: 15px;
 }
 .column-title{
+    font-family: "BOG Headline";
     font-weight: 500;
     text-transform: uppercase;
     font-size: 12px;
@@ -87,6 +92,7 @@
     display: flex;
     justify-content: space-between;
     width: 180px;
+    
 }
 .account-text{
     width: 110px;
@@ -101,6 +107,12 @@
     padding: 10px;
     cursor: pointer;
 }
+.account-money{
+    text-align:end;
+    width: 100px;
+    font-weight: 600;
+    font-size: 14px;
+}
 .account-row:hover{
     background-color: lightgrey;
 }
@@ -108,6 +120,7 @@
     width: 50px;
 }
 .currencys{
+    
     width: 140px;
     display: flex;
     justify-content: space-between;
@@ -127,6 +140,12 @@
     margin-top: 20px;
     align-items: center;
 }
+.deposit-title, .loyalty-title{
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 14px;
+}
 .deposit-button{
     background-color:rgb(236, 204, 204);
     width: 50px;
@@ -135,6 +154,13 @@
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+}
+.deposit-text{
+    font-size: 12px;
+}
+.deposit-number{
+    font-weight: 600;
+    font-size: 14px;
 }
 .fas.fa-money-check{
     color: #fc6719;
@@ -163,6 +189,13 @@
     outline: none;
     margin-right: 10px;
 }
+.loyalty-type{
+    font-size: 12px;
+}
+.loyalty-number{
+    font-weight: 600;
+    font-size: 14px;
+}
 
 /* Exchange */
 .item.exchange{
@@ -170,13 +203,21 @@
     flex-direction: column;
 }
 .exchange-name{
-    height: 50px;
+    
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .exchange-number{
     font-weight: 600;
     font-size: 14px;
 }
 .exchange-titles{
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,7 +232,10 @@
     border-top: 1px solid grey;
 }
 .exchange-type{
+    font-weight: 500;
+    font-size: 12px;
     margin-left: 50px;
+    color: rgb(187, 187, 187);
 }
 .exchange-row{
     width: 100%;
@@ -202,10 +246,11 @@
     justify-content: space-between;
 }
 .exchange-currency{
+    font-size: 13px;
+    font-weight: 500;
     text-align: center;
     width: 50px;
     height: 20px;
-    font-size: 15px;
     background-color: lightgrey;
 }
 
@@ -236,6 +281,7 @@
 .contact-title, .payment-title{
     font-weight: 500;
     text-transform: uppercase;
+    font-family: "BOG Headline";
     font-size: 14px;
     margin-bottom: 15px;
 }
@@ -267,7 +313,8 @@
     border-radius: 30px;
 }
 .contact-name, .payment-name{
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600px;
 }
 .fas.fa-ellipsis-h{
     color:#fc6719;
@@ -288,6 +335,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+}
+.operations-title{
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .operation{
     height: 70px;
@@ -313,6 +366,8 @@
     margin-right: auto;
 }
 .operation-price{
+    font-weight: 600;
+    font-size: 14px;
     margin-right: 10px;
 }
 .operation-date{
@@ -334,7 +389,7 @@
 }
 .show-more-title{
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 12px;
 }
 .fas.fa-ellipsis-v{
     color:grey;

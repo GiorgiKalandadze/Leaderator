@@ -29,7 +29,8 @@ footer{
 }
 
 .footer-link{
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 12px;
     margin-right: 25px;
     color: rgb(36, 36, 36);
     text-decoration: none;
