@@ -1,0 +1,654 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--color-invert-background-solid-30);
+}
+.container{
+    width: 1296px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Main */
+.main-part{
+    width: 100%;
+    display: flex;
+}
+.main-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.space{
+    width: 24px;
+}
+.item{
+    width: 636px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    /* padding: 20px; */
+}
+/* Amount */
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+.amount-sum{
+    font-family: "BOG Headline";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.amount-value{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.amount-number{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "BOG";
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.amount-currency{
+    margin-left: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "BOG";
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.column-titles{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.column-title{
+    width:30%;
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.column-title:last-child{
+    width: 15%;
+}
+.account-row{
+    border-top: 1px solid var(--color-invert-component-tr-80);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    cursor: pointer;
+    height: 65px;
+}
+.account-row:hover{
+    background-color: var(--color-invert-component-tr-80);
+}
+.account-name{
+    width: 35%;
+    display: flex;
+    align-items: center;   
+}
+.card{
+    box-shadow: var(--shadow-raised);
+    width: 40px;
+    height: 24px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.account-text{
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: "BOG";
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+
+.currencys{   
+    width: 35%; 
+    line-height: var(--space-16);
+    font-size: 12px;
+}
+.currency{
+    text-align: center;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: 1px solid grey;
+    color: grey;
+    border-radius: 12px;
+    outline: none;
+}
+.currency:first-child{
+    border: 1px solid black;
+    color: black;
+}
+
+.account-money{
+    width: 15%;
+    display: flex;
+    text-align:end; 
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "BOG";
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+/* Deposit */
+
+.deposit-title, .loyalty-title{
+    padding: 20px;
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.deposit-items, .loyalty-items{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.deposit-button{
+    opacity: 0.5;
+    width:  48px;
+    height: 48px;
+    border: none;
+    border-radius: 36px;
+    outline: none;
+    cursor: pointer;
+}
+.deposit-button:hover{
+    opacity: 0.8;
+}
+.fas.fa-money-check{
+    color: #fc6719;
+    font-size: 16px;
+}
+.deposit-text{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.67;
+}
+.deposit-number{
+    font-weight: 600;
+    font-size: 14px;
+    font-family: BOG;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+
+.deposit-values{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.loyalty-button{
+    width:  48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--background-color, var(--color-invert-component-tr-80));
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.loyalty-item{
+    display: flex;
+    align-items: center;
+}
+.loyalty-img{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.loyalty-type{
+    font-size: 12px;
+}
+.loyalty-number{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Exchange */
+.item.exchange{
+    display: flex;
+    flex-direction: column;
+}
+.exchange-name{
+    padding: 20px;
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.exchange-p{
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.exchange-number{
+    font-weight: 600;
+    font-size: 14px;
+}
+.exchange-titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+}
+.exchange-types{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    border-top: 1px solid grey;
+}
+.exchange-type{
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 50px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+    color: rgb(187, 187, 187);
+}
+.exchange-row{
+    width: 100%;
+    padding: 15px;
+    border-top: 1px solid grey;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.exchange-course{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fas.fa-long-arrow-alt-up{
+    font-size: 12px;
+    color : red;
+}
+.exchange-diff{
+    color: red;
+    font-weight: 500px;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.exchange-currency{
+    background-color: var(--color-error-solid-10);
+    color: var(--color-white-tr-20);
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--space-48);
+    height: var(--space-24);
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+/* Pension */
+.pension-items{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.pension-info{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pension-title{
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.pension-activate{
+    font-family: MarkGEO, sans-serif;
+    font-size: 14px;
+    color:#fc6719;
+}
+.pension-logo{
+    width: 60px;
+    margin-right: 20px;
+}
+/* Contact and Payment*/
+.contact-title, .payment-title{
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+.item.contacts, .item.payments{
+    padding: 20px;
+}
+.contact-items, .payment-items{
+    display: flex;
+}
+.contact, .payment{
+    /* border: 2px solid black; */
+    width: 118px;
+    height: 140px;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: none;
+    /* transition: background-color 0.1s; */
+    cursor: pointer; 
+}
+
+.contact:hover, .payment:hover{
+    background-color: var(--color-invert-component-tr-80);
+    border-radius: 10px;
+}
+.contact-image, .payment-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.contact-name, .payment-name{
+    font-size: 14px;
+    font-weight: 600px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-invert-component-tr-20);
+    margin: 6px 0px 0px;
+}
+.fas.fa-ellipsis-h{
+    color:#fc6719;
+}
+.more{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--color-primary-tr-60);
+    outline: none;
+    border: none;
+}
+
+/* Operations */
+.operation-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.operations-title{
+    padding: 20px;
+    font-weight: 500;
+    font-family: "BOG Headline";
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 14px;
+}
+.operation{
+    height: 70px;
+    width: 100%;
+    padding: 20px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.operation:first-child{
+    opacity: 0.5;
+}
+.operation:hover{
+    background-color: var(--color-invert-component-tr-70);
+    cursor: pointer;
+}
+.operation-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.operation-detail{
+    margin-left: 10px;
+    margin-right: auto;
+}
+.operation-price{
+    font-weight: 600;
+    font-size: 14px;
+    font-family: BOG;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+    margin-right: 8px;
+}
+.operation-date{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: "BOG";
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.operation-place{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-invert-component-tr-20);
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "BOG";
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.operation-type{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--color-invert-component-tr-40);
+    margin-top: 2px;
+    font-family: BOG;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 1.4em;
+}
+.show-more-opers{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.show-more-opers:hover{
+    background-color: var(--color-invert-component-tr-80);
+}
+.fas.fa-chevron-right{
+    font-size: 16px;
+    margin-right: 8px;
+    color: var(--color-primary-solid-20);
+    font-weight: 500px
+}
+.show-more-title{
+    font-weight: 500px;
+    font-family: MarkGEOCAPS, sans-serif;
+    margin-left: 10px;
+    font-size: 12px;
+    color: var(--color-primary-solid-20);
+}
+.fas.fa-ellipsis-v{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fas.fa-ellipsis-v:hover{
+    background-color: var(--color-invert-component-tr-70);
+}
+
+@media only screen and (max-width: 1366px) {
+    main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .container{
+        width: 100%;
+    }
+    .main-items{
+        width: 100%;
+        /* border: 1px solid black */
+    }
+    .item{
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .contact-items, .payment-items{
+        /* border: 1px solid blue; */
+        width: 100%;
+    }
+    .contact, .payment{
+        width: 20%;
+    }
+
+}
+@media only screen and (max-width: 1025px) {
+    .main-part{
+        flex-direction: column;
+    }
+    
+    .main-items{
+        align-items: center;
+    }
+    .item{
+        width: 600px;
+    }
+
+}
+@media only screen and (max-width: 665px) {
+    .main-items{
+        width: 100%;
+    }
+    .item{
+        width: 100%;
+    }
+    .contact-items, .payment-items{
+        flex-direction: column;
+    }
+    .contact, .payment{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        height: 70px;
+    }
+    .contact:hover, .payment:hover{
+        border-radius: 0px;
+    }
+    .contact-image, .payment-image, .more{
+        margin-right: var(--space-16);
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    .contact-name, .payment-name{
+        font-weight: 500;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 526px) {
+    .card, .currencys{
+        display: none;
+    }
+}

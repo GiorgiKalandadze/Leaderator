@@ -3,33 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IBank</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="style.css">
+  <title>iBank</title>
+  <link rel="stylesheet" href="Style/index.css">
+  <link rel="stylesheet" href="Style/header.css">
+  <link rel="stylesheet" href="Style/footer.css">
+  <link rel="stylesheet" href="Style/style.css">
   <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="header">
         <!-- Logo and Profile -->
         <div class="container">
             <div class="header-items">
                 <div class="header-logo">
-                    <img src="logo.png" alt="Bank Of Georgia Logo">
+                    <img src="./Image/logo.svg" alt="Bank Of Georgia Logo" class="logo">
+                    <p class="beta">BETA</p>
                 </div>
                 <div class="header-profile">
                     <button class="dark"><i class="fas fa-moon"></i></button>
-                    <!-- <i class="far fa-user-circle"></i> -->
-                    <button class="profile-pic"><img src="profile.png" alt="Profile" class="profile-img"></button>
+                    <button class="profile-pic"><i class="far fa-user"></i></button>
                     <p class="user-name">გიორგი კალანდაძე</p>
-                    <i class="fas fa-chevron-down"></i>
+                    <button class="drop-down"><i class="fas fa-chevron-down"></i></button>
                 </div>
             </div>
         </div>
+        
+    </header>
+    <section class="navigation">
         <!-- Navigation -->
         <div class="container">
             <nav class="nav">
@@ -44,243 +47,262 @@
                 </ul>
             </nav>
         </div>
-    </header>
-
+    </section>
     <!-- Main -->
     <main>
-        <div class="container main">
-            <div class="main-items">
-                <div class="item amount">
-                    <p class="amount-sum">სულ ხელმისაწვდომი თანხა</p>
-                    <p class="amount-value">25.63 ლ</p>
-                    <div class="column-titles">
-                        <p class="column-title">სახელი</p>
-                        <p class="column-title">ვალუტა</p>
-                        <p class="column-title">თანხა</p>
-                    </div>
-                    <div class="account-row">
-                        <div class="account-name">
-                            <img src="card.jpeg" alt="Card" class="card">
-                            <p class="account-text">უნივერსალური ანგარიში</p>
+        <div class="container">
+            <div class="main-part">
+                <div class="main-items">
+                    <div class="item amount">
+                        <p class="amount-sum">სულ ხელმისაწვდომი თანხა</p>
+                        <div class="amount-value">
+                            <p class="amount-number">256.125</p>
+                            <p class="amount-currency">₾</p>
                         </div>
-                        <div class="currencys">
-                            <button class="currency">ლ</button>
-                            <button class="currency">$</button>
-                            <button class="currency">€</button>
-                            <button class="currency">£</button>
+                        <div class="column-titles">
+                            <p class="column-title">სახელი</p>
+                            <p class="column-title">ვალუტა</p>
+                            <p class="column-title">თანხა</p>
                         </div>
-                        <p class="account-money">23.54 ლ</p>
-                    </div>
-                    <div class="account-row" >
-                        <div class="account-name">
-                            <img src="card2.jpeg" alt="Card" class="card">
-                            <p class="account-text">მომსახურე ანგარიში</p>
-                        </div>
-                        <div class="currencys">
-                            <button class="currency">ლ</button>
-                        </div>
-                        <p class="account-money">1.51 $</p>
-                    </div>
-                </div>
-                <div class="item deposit">
-                    <p class="deposit-title">ანაბრები და ვალდებულებები</p>
-                    <div class="deposit-items">
-                        <button class="deposit-button"><i class="fas fa-money-check"></i></button>
-                        <div class="deposit-values">
-                            <p class="deposit-text">ანაბრები</p>
-                            <p class="deposit-number">103.58 ლ</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item loyalty">
-                    <p class="loyalty-title">დაგროვების პროგრამები</p>
-                    <div class="loyalty-items">
-                        <div class="loyalty-item">
-                            <img src="plus.png" alt="Plus" class="loyalty-img">
-                            <div class="loyalty-info">
-                                <p class="loyalty-type">PLUS ქულები</p>
-                                <p class="loyalty-number">815</p>
+                        <div class="account-row">
+                            <div class="account-name">
+                                <img src="./Image/card.png" alt="Card" class="card">
+                                <p class="account-text">უნივერსალური ანგარიში</p>
+                            </div>
+                            <div class="currencys">
+                                <button class="currency">ლ</button>
+                                <button class="currency">$</button>
+                                <button class="currency">€</button>
+                                <button class="currency">£</button>
+                            </div>
+                            <div class="account-money">
+                                <p class="money-value">23.54</p>
+                                <p class="money-currency">$</p>
                             </div>
                         </div>
-                        <div class="loyalty-item">
-                            <img src="school.jpg" alt="School" class="loyalty-img">
-                            <div class="loyalty-info">
-                                <p class="loyalty-type">sCool-ები</p>
-                                <p class="loyalty-number">25</p>
+                        <div class="account-row" >
+                            <div class="account-name">
+                                <img src="./Image/card.png" alt="Card" class="card">
+                                <p class="account-text">მომსახურე ანგარიში</p>
+                            </div>
+                            <div class="currencys">
+                                <button class="currency">ლ</button>
+                            </div>
+                            <p class="account-money">1.51 $</p>
+                        </div>
+                    </div>
+                    <div class="item deposit">
+                        <p class="deposit-title">ანაბრები და ვალდებულებები</p>
+                        <div class="deposit-items">
+                            <button class="deposit-button"><i class="fas fa-money-check"></i></button>
+                            <div class="deposit-values">
+                                <p class="deposit-text">ანაბრები</p>
+                                <p class="deposit-number">103.58 ₾</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="item exchange">
-                    <p class="exchange-name">ვალუტის კურსები</p>
-                    <div class="exchange-titles">
-                        <p>ვალუტა</p>
-                        <p>ოფიც.კურსი</p>
-                        <p>ინტ.ბანკის კურსი</p>
-                    </div>
-                    <div class="exchange-types">
-                        <p class="exchange-type">ყიდვა</p>
-                        <p class="exchange-type">გაყიდვა</p>
-                    </div>
-                    <div class="exchange-row">
-                        <div class="exchange-currency">$</div>
-                        <p class="exchange-number">3.4464</p>
-                        <p class="exchange-number">3.4350</p>
-                        <p class="exchange-number">3.4650</p>
-                    </div>
-                    <div class="exchange-row">
-                        <div class="exchange-currency">€</div>
-                        <p class="exchange-number">4.1529</p>
-                        <p class="exchange-number">4.1290</p>
-                        <p class="exchange-number">4.1290</p>
-                    </div>
-                    <div class="exchange-row">
-                        <div class="exchange-currency">$</div>
-                        <p class="exchange-number">4.7812</p>
-                        <p class="exchange-number">4.7340</p>
-                        <p class="exchange-number">4.8420</p>
-                    </div>
-                </div>
-                <div class="item pension">
-                    <div class="pension-items">
-                        <div class="pension-info">
-                            <p class="pension-title">საპენსიო ფონდი</p>
-                            <p class="pension-activate">გააქტიურება</p>
-                        </div>
-                        <img src="pension.png" alt="Pension" class="pension-logo">
                     </div>
                     
-                </div>
-            </div>
-            <div class="main-items">
-                <div class="item contacts">
-                    <p class="contact-title">კონტაქტები</p>
-                    <div class="payment-items">
-                        <div class="contact">
-                            <img src="avatar1.jpeg" alt="Contact" class="contact-image">
-                            <p class="contact-name">გიორგი მაისურაძე</p>
-                        </div>
-                        <div class="contact">
-                            <img src="avatar2.jpeg" alt="Contact" class="contact-image">
-                            <p class="contact-name">ნინო ბერიძე</p>
-                        </div>
-                        <div class="contact">
-                            <img src="avatar3.jpeg" alt="Contact" class="contact-image">
-                            <p class="contact-name">ირაკლი კანდელაკი</p>
-                        </div>
-                        <div class="contact">
-                            <img src="avatar4.png" alt="Contact" class="contact-image">
-                            <p class="contact-name">მარიამ ბარამიძე</p>
-                        </div>
-                        <div class="contact">
-                            <button class="more"><i class="fas fa-ellipsis-h"></i></button>
-                            <p class="contact-name">მეტის ნახვა</p>
+                    <div class="item loyalty">
+                        <p class="loyalty-title">დაგროვების პროგრამები</p>
+                        <div class="loyalty-items">
+                            <div class="loyalty-item">
+                                <button class="loyalty-button"><img src="./Image/plus.png" alt="Plus" class="loyalty-img">
+                                </button>
+                                <div class="loyalty-info">
+                                    <p class="loyalty-type">PLUS ქულები</p>
+                                    <p class="loyalty-number">815</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item payments">
-                    <p class="payment-title">ჩემი გადახდები</p>
-                    <div class="contact-items">
-                        <div class="payment">
-                            <img src="pay1.png" alt="payment" class="payment-image">
-                            <p class="payment-name">თავისუფალი უნივერსიტეტი</p>
+                    
+                    <div class="item exchange">
+                        <p class="exchange-name">ვალუტის კურსები</p>
+                        <div class="exchange-titles">
+                            <p class="exchange-p">ვალუტა</p>
+                            <p class="exchange-p">ოფიც.კურსი</p>
+                            <p class="exchange-p">ინტ.ბანკის კურსი</p>
                         </div>
-                        <div class="payment">
-                            <img src="pay2.png" alt="payment" class="payment-image">
-                            <p class="payment-name">მაკდონალდსი</p>
+                        <div class="exchange-types">
+                            <p class="exchange-type">ყიდვა</p>
+                            <p class="exchange-type">გაყიდვა</p>
                         </div>
-                        <div class="payment">
-                            <img src="pay3.jpeg" alt="payment" class="payment-image">
-                            <p class="payment-name">კავეა</p>
+                        <div class="exchange-row">
+                            <div class="exchange-currency">$</div>
+                            <div class="exchange-course">
+                                <p class="exchange-number">4.7812</p>
+                                <i class="fas fa-long-arrow-alt-up"></i>
+                                <p class="exchange-diff">0.0211</p>
+                            </div>
+                            <p class="exchange-number">3.4350</p>
+                            <p class="exchange-number">3.4650</p>
                         </div>
-                        <div class="payment">
-                            <img src="pay4.jpeg" alt="payment" class="payment-image">
-                            <p class="payment-name">ლუკა პოლარე</p>
+                        <div class="exchange-row">
+                            
+                            <div class="exchange-currency">€</div>
+                            <div class="exchange-course">
+                                <p class="exchange-number">4.1529</p>
+                                <i class="fas fa-long-arrow-alt-up"></i>
+                                <p class="exchange-diff">0.0201</p>
+                            </div>
+                            <p class="exchange-number">4.1290</p>
+                            <p class="exchange-number">4.1290</p>
                         </div>
-                        <div class="payment">
-                            <button class="more"><i class="fas fa-ellipsis-h"></i></button>
-                            <p class="payment-name">მეტის ნახვა</p>
+                        <div class="exchange-row">
+                            <div class="exchange-currency">$</div>
+                            <div class="exchange-course">
+                                <p class="exchange-number">4.7812</p>
+                                <i class="fas fa-long-arrow-alt-up"></i>
+                                <p class="exchange-diff">0.0121</p>
+                            </div>
+                            <p class="exchange-number">4.7340</p>
+                            <p class="exchange-number">4.8420</p>
                         </div>
                     </div>
+                    
+                    <div class="item pension">
+                        <div class="pension-items">
+                            <div class="pension-info">
+                                <p class="pension-title">საპენსიო ფონდი</p>
+                                <p class="pension-activate">გააქტიურება</p>
+                            </div>
+                            <img src="./Image/pension.png" alt="Pension" class="pension-logo">
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="item operations">
-                    <p class="operations-title">ბოლო ოპერაციები</p>
-                    <div class="operation-items">
-                        <div class="operation">
-                            <img src="oper1.jpg" alt="operation" class="operation-img">
-                            <div class="operation-detail">
-                                <p class="operation-date">22 აპრ, 2021</p>
-                                <p class="operation-place">ნიკორა</p>
-                                <p class="operation-type">გადახდა</p>
+                <div class="space"></div>
+                <div class="main-items">
+                    <div class="item contacts">
+                        <p class="contact-title">კონტაქტები</p>
+                        <div class="contact-items">
+                            <div class="contact">
+                                <img src="./Image/BOG.png" alt="Contact" class="contact-image">
+                                <p class="contact-name">გიორგი მაისურაძე</p>
                             </div>
-                            <p class="operation-price">45.20 ლ</p>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="operation">
-                            <img src="oper2.jpeg" alt="operation" class="operation-img">
-                            <div class="operation-detail">
-                                <p class="operation-date">22 აპრ, 2021</p>
-                                <p class="operation-place">გუდვილი</p>
-                                <p class="operation-type">ჩარიცხვა</p>
+                            <div class="contact">
+                                <img src="./Image/BOG.png" alt="Contact" class="contact-image">
+                                <p class="contact-name">ნინო ბერიძე</p>
                             </div>
-                            <p class="operation-price">32.24 ლ</p>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="operation">
-                            <img src="oper3.jpg" alt="operation" class="operation-img">
-                            <div class="operation-detail">
-                                <p class="operation-date">23 აპრ, 2021</p>
-                                <p class="operation-place">აგროჰაბი </p>
-                                <p class="operation-type">გადახდა</p>
+                            <div class="contact">
+                                <img src="./Image/TBC.png" alt="Contact" class="contact-image">
+                                <p class="contact-name">ირაკლი კანდელაკი</p>
                             </div>
-                            <p class="operation-price">20.00 ლ</p>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="operation">
-                            <img src="oper4.jpg" alt="operation" class="operation-img">
-                            <div class="operation-detail">
-                                <p class="operation-date">22 აპრ, 2021</p>
-                                <p class="operation-place">სუშის სახლი</p>
-                                <p class="operation-type">ჩარიცხვა</p>
-                            </div>  
-                            <p class="operation-price">25.21 ლ</p>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="operation">
-                            <img src="oper5.jpeg" alt="operation" class="operation-img">
-                            <div class="operation-detail">
-                                <p class="operation-date">22 აპრ, 2021</p>
-                                <p class="operation-place">რონის პიცა</p>
-                                <p class="operation-type">ჩარიცხვა</p>
+                            <div class="contact">
+                                <img src="./Image/BOG.png" alt="Contact" class="contact-image">
+                                <p class="contact-name">მარიამ ბარამიძე</p>
                             </div>
-                            <p class="operation-price">18.80 ლ</p>
-                            <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="operation">
-                            <img src="oper6.png" alt="operation" class="operation-img">
-                            <div class="operation-detail">
-                                <p class="operation-date">21 აპრ, 2021</p>
-                                <p class="operation-place">ვენდისი</p>
-                                <p class="operation-type">ბართი</p>
+                            <div class="contact">
+                                <button class="more"><i class="fas fa-ellipsis-h"></i></button>
+                                <p class="contact-name">მეტის ნახვა</p>
                             </div>
-                            <p class="operation-price">15.30 ლ</p>
-                            <i class="fas fa-ellipsis-v"></i>
                         </div>
-                        <div class="operation">
-                            <img src="avatar1.jpeg" alt="operation" class="operation-img">
-                            <div class="operation-detail">
-                                <p class="operation-date">21 აპრ, 2021</p>
-                                <p class="operation-place">გიორგი ბერიძე</p>
-                                <p class="operation-type">ჩარიცხვა</p>
+                    </div>
+                    <div class="item payments">
+                        <p class="payment-title">ჩემი გადახდები</p>
+                        <div class="contact-items">
+                            <div class="payment">
+                                <img src="./Image/oper6.png" alt="payment" class="payment-image">
+                                <p class="payment-name">ვენდისი</p>
                             </div>
-                            <p class="operation-price">22.20 ლ</p>
-                            <i class="fas fa-ellipsis-v"></i>
+                            <div class="payment">
+                                <img src="./Image/BOG.png" alt="payment" class="payment-image">
+                                <p class="payment-name">კავეა</p>
+                            </div>
+                            <div class="payment">
+                                <img src="./Image/avatar1.jpeg" alt="payment" class="payment-image">
+                                <p class="payment-name">თემურ ქირია</p>
+                            </div>
+                            <div class="payment">
+                                <img src="./Image/TBC.png" alt="payment" class="payment-image">
+                                <p class="payment-name">ლუკა ბარნოვი</p>
+                            </div>
+                            <div class="contact">
+                                <button class="more"><i class="fas fa-ellipsis-h"></i></button>
+                                <p class="contact-name">მეტის ნახვა</p>
+                            </div>
                         </div>
-                        <div class="show-more-opers">
-                            <i class="fas fa-chevron-right"></i>
-                            <p class="show-more-title">ყველას ნახვა</p>
-                        </div>
+                    </div>
+                    
+                    <div class="item operations">
+                        <p class="operations-title">ბოლო ოპერაციები</p>
+                        <div class="operation-items">
+                            <div class="operation">
+                                <img src="./Image/BOG.png" alt="operation" class="operation-img">
+                                <div class="operation-detail">
+                                    <p class="operation-date">22 აპრ, 2021</p>
+                                    <p class="operation-place">ნიკორა</p>
+                                    <p class="operation-type">გადახდა</p>
+                                </div>
+                                <p class="operation-price">- 45.20 ₾</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="operation">
+                                <img src="./Image/BOG.png" alt="operation" class="operation-img">
+                                <div class="operation-detail">
+                                    <p class="operation-date">22 აპრ, 2021</p>
+                                    <p class="operation-place">გუდვილი, ვაჟა-ფშაველას 34</p>
+                                    <p class="operation-type">ჩარიცხვა</p>
+                                </div>
+                                <p class="operation-price">32.24 ₾</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="operation">
+                                <img src="./Image/avatar1.jpeg" alt="operation" class="operation-img">
+                                <div class="operation-detail">
+                                    <p class="operation-date">23 აპრ, 2021</p>
+                                    <p class="operation-place">აგროჰაბი </p>
+                                    <p class="operation-type">გადახდა</p>
+                                </div>
+                                <p class="operation-price"> - 20.00 ₾</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="operation">
+                                <img src="./Image/avatar2.jpeg" alt="operation" class="operation-img">
+                                <div class="operation-detail">
+                                    <p class="operation-date">22 აპრ, 2021</p>
+                                    <p class="operation-place">სუშის სახლი</p>
+                                    <p class="operation-type">გადახდა</p>
+                                </div>  
+                                <p class="operation-price"> - 25.10 ₾</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="operation">
+                                <img src="./Image/TBC.png" alt="operation" class="operation-img">
+                                <div class="operation-detail">
+                                    <p class="operation-date">22 აპრ, 2021</p>
+                                    <p class="operation-place">რონის პიცა</p>
+                                    <p class="operation-type">ბარათი</p>
+                                </div>
+                                <p class="operation-price">- 18.80 ₾</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="operation">
+                                <img src="./Image/avatar4.png" alt="operation" class="operation-img">
+                                <div class="operation-detail">
+                                    <p class="operation-date">21 აპრ, 2021</p>
+                                    <p class="operation-place">ვენდისი</p>
+                                    <p class="operation-type">ბართი</p>
+                                </div>
+                                <p class="operation-price">- 15.30 ₾</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="operation">
+                                <img src="./Image/oper2.jpeg" alt="operation" class="operation-img">
+                                <div class="operation-detail">
+                                    <p class="operation-date">21 აპრ, 2021</p>
+                                    <p class="operation-place">გიორგი ბერიძე</p>
+                                    <p class="operation-type">ჩარიცხვა</p>
+                                </div>
+                                <p class="operation-price">22.20 ₾</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="show-more-opers">
+                                <i class="fas fa-chevron-right"></i>
+                                <p class="show-more-title">ყველას ნახვა</p>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,36 +312,33 @@
     <footer>
         <div class="container">
             <div class="footer-items">
-                <!-- Footer Navigation -->
                 <div class="footer-item">
                     <p class="copyright">© 1997 - 2021 საქართველოს ბანკი</p>
                     <nav class="footer-nav">
-                        <ul class="footer-table">
-                            <li class="footer-li"><a href="#" class="footer-link start">პირობები</a></li>
-                            <li><a href="#" class="footer-link">შეტყობინებები</a></li>
-                            <li><a href="#" class="footer-link">ცხელი ხაზი</a></li>
-                            <li><a href="#" class="footer-link">უსაფრთხოების ცენტრი</a></li>
+                        <ul class="footer-list">
+                            <li class="footer-li"><a href="#" class="footer-link">პირობები</a></li>
+                            <li class="footer-li"><a href="#" class="footer-link">შეტყობინებები</a></li>
+                            <li class="footer-li"><a href="#" class="footer-link">ცხელი ხაზი</a></li>
+                            <li class="footer-li"><a href="#" class="footer-link">უსაფრთხოების ცენტრი</a></li>
                         </ul>
-                    </nav>
-                    
+                    </nav> 
                 </div>
-                <!-- Footer Platforms -->
-                <!-- <div class="footer-platform"> -->
-                <div class="footer-social">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
+                <div class="footer-platform">
+                    <div class="footer-social">
+                        <button class="social-button"><i class="fab fa-facebook-square"></i></button>
+                        <button class="social-button"><i class="fab fa-youtube"></i></button>
+                        <button class="social-button"><i class="fab fa-instagram"></i></button>
+                        <button class="social-button"><i class="fab fa-linkedin"></i></button>
+                    </div>
+                    <div class="footer-app">
+                        <button class="app"><img src="./Image/android.svg" alt="Android" class="app-img"></button>
+                        <button class="app"><img src="./Image/ios.svg" alt="IOS" class="app-img"></button>
+                    </div>
+                    <div class="footer-language">
+                        <img class="language-flag" src="./Image/en.png" alt="British Flag">
+                        <p class="language-name">English</p>
+                    </div>
                 </div>
-                <div class="footer-app">
-                    <img src="android.png" alt="Android">
-                    <img src="ios.png" alt="IOS">
-                </div>
-                <div class="footer-language">
-                    <img class="language-flag" src="flag.png" alt="British Flag">
-                    <p>English</p>
-                </div>
-                <!-- </div> -->
             </div>
         </div>
     </footer>
